@@ -1,0 +1,21 @@
+GET http://localhost:8080/account/1324 1234 42456 0357
+Accept: application/json
+
+###
+POST http://localhost:8080/card
+Content-Type: application/json
+
+{"accId": "1"}
+
+###
+GET http://localhost:8080/card/1
+Accept: application/json
+
+###
+POST http://localhost:8080/account
+Content-Type: application/json
+
+{
+  "cash": "3000.30",
+  "accountNumber": "1324 1234 42456 0357"
+}
